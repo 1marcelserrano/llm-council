@@ -1,27 +1,19 @@
 ---
 name: llm-council
 description: |
-  Passa qualquer pergunta, ideia ou decisão de alto custo de erro por um conselho
-  de 5 conselheiros de IA que analisam o caso de forma independente, revisam o
-  trabalho uns dos outros de forma anônima (peer review) e sintetizam um veredito
-  final. Baseado no método LLM Council de Andrej Karpathy. Cada conselheiro pensa
-  por uma lente diferente — o Contrário, o Pensador de Primeiros Princípios, o
-  Expansionista, o Forasteiro e o Executor — que criam tensão proposital entre si.
-  Entrega onde o conselho concorda, onde diverge, os pontos cegos que só a revisão
-  cruzada pegou, uma recomendação direta e o primeiro passo concreto. Gera
-  relatório HTML + transcrição. TRIGGERS: passa no conselho, roda o conselho,
-  convoca o conselho, leva pro conselho, conselho disso, conselho dessa decisão,
-  war room isso, sala de guerra, põe à prova, pressiona essa ideia, stress test
-  disso, testa essa decisão, debate isso, debate essa ideia. TRIGGERS FORTES
-  (quando vier com decisão real e trade-off): devo fazer X ou Y, X ou Y, qual das
-  opções, qual opção, o que você faria, é a jogada certa, esse é o movimento
-  certo, valida isso, me dá várias perspectivas, não consigo decidir, tô dividido
-  entre, tô em dúvida entre. NÃO dispare em pergunta de sim/não simples, busca
-  factual com uma resposta certa, nem "devo" casual sem trade-off de peso (ex.:
-  "devo usar markdown?" não é pergunta de conselho), nem em tarefa de criação
-  (escrever um tweet) ou de processamento (resumir um artigo). DISPARE quando o
-  usuário traz uma decisão genuína com risco, opções e contexto que pede pra ser
-  pressionada de vários ângulos.
+  Passa uma pergunta, ideia ou decisão de alto custo de erro por um conselho de
+  5 conselheiros de IA com lentes diferentes: o Contrário, o Pensador de
+  Primeiros Princípios, o Expansionista, o Forasteiro e o Executor. Eles
+  analisam o caso de forma independente, revisam uns aos outros de forma anônima
+  e um presidente sintetiza o veredito. Método LLM Council de Andrej Karpathy.
+  Entrega onde concordam, onde divergem, os pontos cegos, uma recomendação
+  direta e o primeiro passo, com relatório HTML e transcrição. TRIGGERS: passa
+  no conselho, roda o conselho, convoca o conselho, leva pro conselho, war room
+  isso, pressiona essa ideia, stress test disso, devo fazer X ou Y, qual das
+  opções, é a jogada certa, tô dividido entre, tô em dúvida entre. NÃO dispare
+  em pergunta com resposta certa, em "devo" casual sem trade-off de peso, nem em
+  tarefa de criação ou de processamento. DISPARE quando houver decisão genuína,
+  com risco, opções e contexto.
 ---
 
 # LLM Council
