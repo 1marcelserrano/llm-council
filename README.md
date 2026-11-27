@@ -90,7 +90,9 @@ Uma skill é um conjunto de instruções que ensina o Claude a fazer uma tarefa 
 4. Confira se a chave ao lado de llm-council está ligada.
 5. Abra uma conversa nova e escreva: "passa no conselho".
 
-**O que foi testado:** o envio de um arquivo `.skill` por esse caminho foi feito pelo autor com outras skills dele (Fila de Prioridades e Prompt Chain). O Claude aceitou direto, sem renomear, e a skill já entrou ativada. Com o arquivo `llm-council.skill` esse teste ainda falta. Também falta alguém que não seja o autor seguir só este passo a passo, e ver onde o relatório em HTML aparece para quem usa o Claude no site.
+**O que foi testado:** o envio de um arquivo `.skill` por esse caminho foi feito pelo autor com outras skills dele (Fila de Prioridades e Prompt Chain). O Claude aceitou direto, sem renomear, e a skill já entrou ativada. O primeiro envio do llm-council.skill 1.0.0 foi recusado pelo Claude: o campo "description" tinha 1591 caracteres e o limite é 1024. A versão 1.0.1 corrige isso. Com a versão 1.0.1 esse teste ainda falta: o reenvio não foi conferido. Também falta alguém que não seja o autor seguir só este passo a passo, e ver onde o relatório em HTML aparece para quem usa o Claude no site.
+
+Se o Claude recusar o arquivo com a mensagem de que o campo description deve ter no máximo 1024 caracteres, você baixou a versão 1.0.0. Baixe a 1.0.1 ou mais nova na [página de releases](https://github.com/1marcelserrano/llm-council/releases/latest).
 
 <details>
 <summary>Para quem já usa o terminal</summary>
