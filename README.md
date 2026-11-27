@@ -82,11 +82,11 @@ Uma skill é um conjunto de instruções que ensina o Claude a fazer uma tarefa 
 
 **O que você precisa ter:** uma conta no Claude e, nas configurações dele, a opção de executar código e criar arquivos ligada (em inglês, "Code execution and file creation"). O Claude pede isso para aceitar skills enviadas. Se o seu Claude é da empresa, o administrador pode precisar liberar o envio de skills.
 
-**Antes de rodar:** antes de enquadrar a pergunta, a skill procura rapidamente arquivos de contexto na pasta onde o Claude está aberto, para os conselheiros não responderem no escuro. Se a pasta tem material que você não quer que ela leia, abra o Claude em outra pasta. Ela usa cinco ajudantes em paralelo, o que gasta bastante do seu limite de uso, e grava um relatório em HTML.
+**Antes de rodar:** antes de enquadrar a pergunta, a skill procura rapidamente arquivos de contexto, para os conselheiros não responderem no escuro. Se você usa um aplicativo que abre uma pasta do seu computador (como o Claude Code ou o Cowork), ela pode ler essa pasta: abra o Claude em outra pasta se houver material que você não quer que ela leia. Pelo site do Claude, ela trabalha com a conversa e com o que você anexar, e esse comportamento no site não foi testado. Ela usa cinco ajudantes em paralelo, o que gasta bastante do seu limite de uso, e grava um relatório em HTML.
 
 1. [Baixe o arquivo llm-council.skill](https://github.com/1marcelserrano/llm-council/releases/latest/download/llm-council.skill).
 2. Abra o Claude e entre em Customize, o menu das suas skills.
-3. Clique em + Add e escolha enviar uma skill (Upload a skill). Selecione o arquivo baixado. Se o Claude recusar, troque o final do nome de `.skill` para `.zip` e envie de novo.
+3. Clique em + Add e escolha enviar uma skill (Upload a skill). Selecione o arquivo baixado. Se o Claude recusar o arquivo por causa do formato, troque o final do nome de `.skill` para `.zip` e envie de novo. Se a mensagem falar do conteúdo, como um campo acima do limite de tamanho, trocar o nome não resolve: veja o parágrafo sobre isso mais abaixo.
 4. Confira se a chave ao lado de llm-council está ligada.
 5. Abra uma conversa nova e escreva: "passa no conselho".
 
